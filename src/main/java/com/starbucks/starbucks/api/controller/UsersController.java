@@ -37,7 +37,7 @@ public class UsersController {
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable int id){
         userService.deleteUser(id);
-        return new ResponseEntity<>("https://music.youtube.com/watch?v=6h1BErFZbzQ&feature=share",HttpStatus.OK);
+        return new ResponseEntity<>("Kullanici Silindi",HttpStatus.OK);
     }
     @PutMapping("/{id}")
     public ResponseEntity<UpdateUserResponse> updateUser(@PathVariable int id,
